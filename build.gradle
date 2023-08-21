@@ -38,6 +38,10 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {
+		name = "Fuzs Mod Resources"
+		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+	}
 }
 
 dependencies {
@@ -56,11 +60,10 @@ dependencies {
 	runtimeOnly 'io.netty:netty-codec-http:4.1.77.Final'
 
 	modImplementation "maven.modrinth:tis3d:y8sU1agn"
-	modRuntimeOnly "maven.modrinth:architectury-api:HoIJp48v"
-	modRuntimeOnly "maven.modrinth:forge-config-api-port:3VCgXZ79"
+	modImplementation "maven.modrinth:architectury-api:HoIJp48v"
+	modImplementation "net.minecraftforge:forgeconfigapiport-fabric:4.2.11"
 	modRuntimeOnly "maven.modrinth:markdownmanual:S9vjQR4l"
-	implementation(include('com.electronwill.night-config:core:3.6.5'))
-	implementation(include('com.electronwill.night-config:toml:3.6.5'))
+
 
 
 

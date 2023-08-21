@@ -4,7 +4,6 @@ import at.petrak.hexcasting.api.spell.casting.CastingContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
 import net.walksanator.world_split.WorldSection;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
