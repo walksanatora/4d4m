@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.walksanator.world_split.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "MixinCastingContext",
+    "MixinServerComputer",
+    "MixinController"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
